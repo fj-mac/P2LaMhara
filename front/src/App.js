@@ -11,15 +11,20 @@ class App extends Component{
     }
   }
 
+  componentDidMount(){
+    console.log("QUE PUTAS");
+    fetch("/productos")
+      .then(res=>res.json())
+      .then(productos=>this.setState({
+
+          productos: productos
+      }));
+  }
+
   renderProductos(){
     return this.state.productos.map(t=><Producto producto={t}></Producto>);
   }
-
-
-
   render(){
-
-
   return(<div>
     <div className="row">
       <div className="col-md-8">
