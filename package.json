@@ -1,0 +1,7 @@
+{
+  "name":"LaMhara",
+  "scripts":{
+    "start":"node ./nodeExpressReact/bin/www",
+    "heroku-postbuild":"cd front && yarn run build"
+  }
+}
