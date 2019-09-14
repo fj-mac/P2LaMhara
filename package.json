@@ -4,7 +4,8 @@
     "start":"node ./nodeExpressReact/bin/www",
     "heroku-postbuild":"cd front && yarn install && yarn run build"
   },
-    "engines": {
-    "yarn": "1.17.3",
-    "node": "10.16.3"
+  "engines": {
+  "yarn": "1.17.3",
+  "node": "10.16.3"
   },
+}
